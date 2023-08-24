@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@200&family=Noto+Sans&family=Noto+Sans+JP:wght@100&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.fundo {
+  width: auto;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url(../img/banners/fundomin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CARD BONITO */
+
+@media screen and (max-width: 850px) {
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+.container {
+  display: flex;
+  background-color: none;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  border-bottom: #fff solid 1px;
+}
+
+/* CARDS */
+
+.card {
+  background-color: white;
+}
+
+.card img {
+display:flex;
+width: auto;
+height: auto;
+}
+
+.card h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  border-bottom: #000000 solid 1px;
+}
+
+.card h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  border-bottom: #000000 solid 1px;
+}
+
+img {
+  display:flex;
+  max-width:100%;
+  max-height:100%; 
+  width: auto;
+  height: auto;
+  }
+
+
+
+/* BOTÕES */
+
+.btn-cardapio{
+  background-color: #ffc90e;
+  color: #fff;
+  border: #ffc90e 2px solid;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 4px;
+}
+
+.btn-cardapio:hover{
+  background-color: #e9ba10;
+  color: #fff;
+  border: #e9ba10 2px solid;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 4px;
+}
+
+.btn-cardapio:focus{
+  background-color: #e9ba10;
+  color: #fff;
+  border: #e9ba10 2px solid;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+  outline: none;
+  margin-top: 4px;
+}
+
+/* CARD BONITOOO FIM */
+
+
+ion-icon {
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+/* ion-icon:hover{ 
+    color: #000000;
+  } */
+
+/* FOOTER FIM */

@@ -1,0 +1,18 @@
+<?php
+
+    $DATABASE = 'db_chef';
+    $HOST = 'localhost';
+    $USER = 'root';
+    $PASS = '123';
+    $OPTIONS = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ];
+
+    try {
+        $pdo = new PDO('mysql:host='.$HOST.';dbname='.$DATABASE.';charset=utf8', $USER, $PASS, $OPTIONS);
+    } catch (PDOException $e) {
+        echo $e->getMessage() . "</p>";
+        die();
+    }
+
+?>

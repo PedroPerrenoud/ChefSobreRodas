@@ -1,0 +1,212 @@
+:root{
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --cor1: #343a40;
+    --cor2: #454d55;
+    --branco: #fff;
+    --brancoHeader: #343a40;
+    --cor3: #343a40;
+    --corShadow: rgba(0,0,0,0);
+    --corTabela: #191919;
+    --corTabela2: #2c3034;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100
+}
+
+th{
+    font-weight: bold;
+    color: var(--branco);
+    padding: 10px;
+    background-color: var(--corTabela);
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 0 3px rgb(0 0 0 / 20%);
+}
+
+td{
+    background-color: var(--corTabela2);
+    color: var(--branco);
+    padding: 5px;
+}
+
+input{
+    outline: none;
+}
+
+a{
+    color: var(--branco);
+}
+
+.table-header{
+    height: 30px;
+    width: 100%;
+    color: var(--branco);
+    border-bottom: rgba(0,0,0,.125) solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.w-100 .tabelas{
+    width: 100%;
+}
+
+#minhaTabela_wrapper{
+    width: 100%;
+    padding: 10px;
+}
+
+label{
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+
+span{
+    background: none;
+}
+
+input{
+    color: var(--branco);
+}
+
+select{
+    color: var(--branco);
+}
+
+option{
+    color: var(--branco);
+    background-color: #343a40;
+}
+
+#produtosTabela_info{
+    color: var(--branco);
+}
+
+#produtosTabela_paginate{
+    color: var(--branco);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: pointer;
+    color: var(--branco) !important;
+    background: transparent;
+    box-shadow: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: var(--branco) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: none;
+    border: none;
+}
+
+#minhaTabela_wrapper #minhaTabela_filter, 
+#minhaTabela_wrapper #minhaTabela_length, 
+#minhaTabela_wrapper #minhaTabela_info, 
+#minhaTabela_wrapper #minhaTabela_paginate a{
+    color: var(--branco) !important;
+    outline: none;
+}
+
+#minhaTabela{
+    width: 100%;
+    padding: 20px;
+}
+
+#minhaTabela th{
+    text-align: center;
+}
+
+#minhaTabela tbody{
+    width: 100%;
+}
+
+#minhaTabela tbody td a{
+    text-decoration: none;
+    color: #dc3545;
+    font-size: 20px;
+}
+
+.produtos{
+    width: 30%;
+    background-color: var(--cor3);
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    margin-right: 12px;
+    float: left;
+}
+
+.produtos-body{
+    padding: 10px;
+}
+
+.produtos-header{
+    height: 50px;
+    width: 100%;
+    color: var(--branco);
+    border-bottom: rgba(0,0,0,.125) solid 1px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+} 
+
+.produtos-header h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.produtos th{
+    background-color: var(--corTabela) !important;
+}
+
+.produtos thead{
+    text-align: center;
+    color: var(--branco);
+}
+
+.produtos tbody{
+    text-align: center;
+    color: var(--branco);
+    width: 100%;
+}
+
+.produtos .table-header h3{
+    color: var(--branco);
+    text-align: center;
+}
+
+
+@media (max-width: 768px){
+    table{
+        width: 100%;
+    }
+
+    table tr{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+
+    thead{
+        display: none;
+    }
+
+    table td[data-titulo]{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 2px;
+    }
+
+    table td[data-titulo]::before{
+        content: attr(data-titulo);
+        width: auto;
+    }
+    #minhaTabela_filter_input{
+        width: 100% auto;
+    }
+}
